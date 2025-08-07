@@ -18,6 +18,7 @@ rootProject.allprojects {
 }
 apply plugin: 'com.android.library'
 android {
+        namespace "com.example.flutter_beacon"
     compileSdkVersion 30
 
     defaultConfig {
