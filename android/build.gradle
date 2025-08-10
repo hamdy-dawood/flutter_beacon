@@ -7,7 +7,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.1'
+        classpath 'com.android.tools.build:gradle:7.0.4'
     }
 }
 rootProject.allprojects {
@@ -18,11 +18,13 @@ rootProject.allprojects {
 }
 apply plugin: 'com.android.library'
 android {
-        namespace "com.example.flutter_beacon"
-    compileSdkVersion 30
+    compileSdkVersion 31
+
+    namespace 'com.example.flutter_beacon'
 
     defaultConfig {
-        minSdkVersion 18
+        minSdkVersion 21
+        targetSdkVersion 31
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
